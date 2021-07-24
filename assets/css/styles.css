@@ -1,0 +1,114 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Montserrat', 'sans-serif;';
+}
+body {
+	min-height: 100vh;
+	background-color: #f2f7fb;
+	display: flex;
+}
+.main {
+	padding: 48px;
+	color: #333;
+}
+.side {
+	background-color: #263544 !important;
+	color: #e0e0e0 !important;
+	position: relative !important;
+	min-height: 100vh !important;
+	width: 250px !important;
+	transition: width 0.4s !important;
+}
+.side h1 {
+	text-transform: uppercase !important;
+	font-size: 1.5em !important;
+	margin: 20px 20px !important;
+	display: flex !important;
+	align-items: center !important;
+	overflow: hidden !important;
+}
+.side h1 img {
+	width: 48px !important;
+	margin-right: 24px !important;
+}
+.side ul {
+	list-style: none !important;
+	overflow: hidden !important;
+	padding-left: 0px !important;
+}
+.side li {
+	display: flex !important;
+	align-items: center !important;
+	cursor: pointer !important;
+	padding: 24px 32px !important;
+	letter-spacing: 1.5px !important;
+}
+.side li i {
+	font-size: 1.5em !important;
+	margin-right: 32px !important;
+}
+.side li:hover {
+	background-color: rgba(0, 0, 0, 0.2);
+}
+.side li.active {
+	background-color: #1d2532;
+	border-left: 5px solid #58a6ff;
+}
+.side button {
+	position: absolute !important;
+	top: 20px !important;
+	right: 0;
+	transform: translateX(100%);
+	box-shadow: 0 2px 123px -3px rgba(0, 0, 0, 0.3);
+	background-color: #58a6ff;
+	color: #fff;
+	outline: none;
+	border: none;
+	width: 40px;
+	height: 40px;
+	font-size: 1.5em;
+	cursor: pointer;
+	border-top-right-radius: 12px;
+	border-bottom-right-radius: 12px;
+}
+.toggleBtn {
+	z-index: 999999 !important;
+}
+.side i.fa-chevron-right {
+	display: none;
+}
+/*----------------SIDEBARCLOSE----------------*/
+.side.closed {
+	width: 89px !important;
+}
+.side.closed i.fa-chevron-right {
+	display: block;
+}
+.side.closed i.fa-chevron-left {
+	display: none;
+}
+/*----------------HUMBERGUER----------------*/
+@media (max-width: 600px){
+	.side.closed {
+		width: 0 !important;
+	}
+	.main {
+		padding: 46px 24px;
+	}
+
+}
+/*----------------MYLINE01----------------*/
+.headTitle {
+	display: inline-block;
+	position: relative;
+}
+.my_line_01 {
+	height: 7px !important;
+	background-color: #1d2532;
+}
+/*----------------MYLINE02----------------*/
+/*----------------MYLINE03----------------*/
+/*----------------SIDEBARCLOSE----------------*/
+/*----------------SIDEBARCLOSE----------------*/
